@@ -8,8 +8,9 @@
  * For the input 'prettyandsimple@example.com', the output should be 'example.com'
  *
  */
+
 function getEmailDomain(email) {
-  const ind = email.indexOf('@');
+  const ind = email.lastIndexOf('@');
   const domain = email.slice(ind + 1);
   return domain;
 }
