@@ -21,7 +21,7 @@ function getMatrixElementsSum(matrix) {
       if (matrix[j][i] === 0) {
         break;
       } else {
-        valueSum += matrix[j][i];
+        valueSum += matrix[j][i]
       }
     }
   }
