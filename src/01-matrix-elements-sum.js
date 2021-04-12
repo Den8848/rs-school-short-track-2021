@@ -14,7 +14,7 @@
  *
  * The result should be 9
  */
- function getMatrixElementsSum(matrix) {
+function getMatrixElementsSum(matrix) {
   let valueSum = 0;
   for (let i = 0; i < matrix[0].length; i++) {
     for (let j = 0; j < matrix.length; j++) {
@@ -29,6 +29,3 @@
 }
 
 module.exports = getMatrixElementsSum;
-
-
-

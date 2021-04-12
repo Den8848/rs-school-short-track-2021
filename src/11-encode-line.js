@@ -21,7 +21,14 @@ function encodeLine(str) {
       count = 1;
     }
   }
-  return letters.join('');
+  const strJoin = letters.join('');
+  const index = strJoin.indexOf(1);
+  for (let j = 0; j < strJoin.length; j++) {
+    if (index > -1) {
+      strJoin.splice(index, 1);
+    }
+  }
+  return strJoin;
 }
 
 module.exports = encodeLine;
